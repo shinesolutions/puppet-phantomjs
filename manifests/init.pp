@@ -18,7 +18,7 @@ class phantomjs (
 
   # Ensure packages based on operating system exist
   case $::operatingsystem {
-    /(?:CentOS|RedHat|Amazon|Scientific)/: {
+    /(?:CentOS|Rocky|RedHat|Amazon|Scientific)/: {
       # Requirements for CentOS/RHEL according to phantomjs.org
       ensure_packages('fontconfig')
       ensure_packages('freetype')
